@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="LRmix">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lrmixstudio-2.1.3-CommunityEdition.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lrmixstudio-2.1.3-CommunityEdition-sources.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
