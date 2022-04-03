@@ -15,7 +15,8 @@ public class HelpArgument implements Argument{
     @Override
     public String[] consume(String[] args, ArgumentData data) {
         System.err.println("Runs an LRMix analysis.");
-        System.err.println("When neither --help/-h or --version/-V are specified, on non-error exit, writes a result CSV to stdout.\n");
+        System.err.println("When neither --help/-h or --version/-V are specified, on non-error exit, writes a result CSV to stdout.");
+        System.err.println("Unless otherwise specified, arguments are parsed *in order*, which matters both for profile load order and if you are using redundant settings.\n");
         System.err.println("Options understood by this program:");
         for(Argument arg: ArgumentHandler.arguments) {
             System.err.println(String.join(", ", arg.names()) + ": " + arg.description());

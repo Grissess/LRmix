@@ -22,6 +22,7 @@ public class ArgumentHandler {
             new HypothesisSampleArgument(PerHypothesis.DEFENSE), new HypothesisSampleArgument(PerHypothesis.PROSECUTION),
             new HypothesisThetaArgument(PerHypothesis.DEFENSE), new HypothesisThetaArgument(PerHypothesis.PROSECUTION),
             new HypothesisUnknownArgument(PerHypothesis.DEFENSE), new HypothesisUnknownArgument(PerHypothesis.PROSECUTION),
+            new HypothesisRelationArgument(PerHypothesis.DEFENSE), new HypothesisRelationArgument(PerHypothesis.PROSECUTION),
             new ModelNameArgument(),
             new OutputArgument(),
             new PopulationArgument(),
@@ -32,6 +33,7 @@ public class ArgumentHandler {
             new ThetaArgument(),
             new ThreadsArgument(),
             new VersionArgument(),
+            new LastRelWinsArgument(),
     };
 
     protected HashMap<String, Argument> argumentsMap;

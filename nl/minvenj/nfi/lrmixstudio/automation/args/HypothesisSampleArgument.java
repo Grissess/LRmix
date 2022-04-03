@@ -38,7 +38,7 @@ public class HypothesisSampleArgument implements Argument {
 
     void addContributor(ConfigurationData config, Sample sample, double prob) {
         perHypothesis.getHypothesis(config).addContributor(sample, prob);
-        System.err.println("* Added contrib " + sample.getId() + " to " + perHypothesis.getHypothesisName() + " hyp with drop-out prob " + perHypothesis.getHypothesis(config).getContributor(sample).getDropoutProbability());
+        System.err.println("* Added contrib " + sample.getId() + " (" + sample.getSourceFile() + ") to " + perHypothesis.getHypothesisName() + " hyp with drop-out prob " + perHypothesis.getHypothesis(config).getContributor(sample).getDropoutProbability());
     }
 
     @Override

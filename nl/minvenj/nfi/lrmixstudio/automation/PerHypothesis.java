@@ -32,4 +32,8 @@ public class PerHypothesis {
     public boolean isProsecution() {
         return prosecution;
     }
+
+    public ArgumentData.HypothesisProxy getProxy(ArgumentData data) {
+        return prosecution ? data.prosecution : data.defense;
+    }
 }

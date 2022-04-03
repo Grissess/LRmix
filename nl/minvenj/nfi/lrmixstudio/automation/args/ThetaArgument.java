@@ -20,6 +20,6 @@ public class ThetaArgument implements Argument {
 
     @Override
     public String description() {
-        return "set the theta correction for both hypotheses";
+        return "set the theta correction for both hypotheses simultaneously";
     }
 }
